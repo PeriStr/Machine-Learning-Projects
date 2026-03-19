@@ -22,6 +22,7 @@ This repository contains a collection of **Machine Learning** and **Deep Learnin
 * Designed and trained a **Convolutional Neural Network (CNN)** optimized for vehicle recognition and multi-class classification.
 * Implemented data preprocessing, including grayscale conversion, noise reduction, and image normalization to enhance feature detection.
 * **Model Performance:** Optimized training using **Dropout** and **Batch Normalization** to prevent overfitting and ensure high accuracy on unseen data.
+* ![image alt](https://github.com/PeriStr/Machine-Learning-Projects/blob/f08c06708c25499bc1cd4eb1bcac7a77f3caa479/%CE%A3%CF%84%CE%B9%CE%B3%CE%BC%CE%B9%CF%8C%CF%84%CF%85%CF%80%CE%BF%20%CE%BF%CE%B8%CF%8C%CE%BD%CE%B7%CF%82%202026-03-20%20012815.png)
 
 ### 🔹 Classification: MLP vs kNN (CIFAR-10/100)
 * Compared **Multi-Layer Perceptron (MLP)** and **k-Nearest Neighbors (kNN)** for image classification on CIFAR-10/100 datasets.
