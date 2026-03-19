@@ -11,7 +11,7 @@ This repository contains a collection of **Machine Learning** and **Deep Learnin
 * Applied **K-Means clustering** for customer segmentation.
 * Used **XGBoost** for classification tasks.
 * Implemented **Apriori algorithm** for association rule mining.
-* 
+* ![image](https://github.com/PeriStr/Machine-Learning-Projects/blob/7534725aaaf2bc9dfd6debda08580c1ba24341a5/Figure_2.png)
 
 ### 🔹 Image Captioning (CNN + LSTM)
 * Used pretrained **ResNet50** for image feature extraction.
