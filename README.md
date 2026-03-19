@@ -1,2 +1,83 @@
 # Machine-Learning-Projects
-AI, Machine Learning and Data Science projects with focus on predictive modeling, clustering , NLP and image recognetion using Python.
+
+This repository contains a collection of **Machine Learning** and **Deep Learning** projects developed using Python. The projects focus on data analysis, predictive modeling, and neural networks, demonstrating practical experience in building end-to-end ML pipelines.
+
+---
+
+## 🚀 Projects Overview
+
+### 🔹 Customer Segmentation & Behavior Analysis
+* Performed data preprocessing and feature engineering.
+* Applied **K-Means clustering** for customer segmentation.
+* Used **XGBoost** for classification tasks.
+* Implemented **Apriori algorithm** for association rule mining.
+* 
+
+### 🔹 Image Captioning (CNN + LSTM)
+* Used pretrained **ResNet50** for image feature extraction.
+* Implemented **LSTM** for sequence generation.
+* Developed an end-to-end deep learning pipeline for image captioning.
+
+### 🔹 Car Recognition System (CNN)
+* Designed and trained a **Convolutional Neural Network (CNN)** optimized for vehicle recognition and multi-class classification.
+* Implemented data preprocessing, including grayscale conversion, noise reduction, and image normalization to enhance feature detection.
+* **Model Performance:** Optimized training using **Dropout** and **Batch Normalization** to prevent overfitting and ensure high accuracy on unseen data.
+
+### 🔹 Classification: MLP vs kNN (CIFAR-10/100)
+* Compared **Multi-Layer Perceptron (MLP)** and **k-Nearest Neighbors (kNN)** for image classification on CIFAR-10/100 datasets.
+* Extracted **Color Histograms** (RGB/HSV) and **Edge Histograms** (Sobel Gradients) to represent visual information as feature vectors.
+* Implemented **ReLU** activation, **Dropout** for regularization, and **Early Stopping** to ensure efficient training and prevent overfitting.
+* Analyzed model performance using **Confusion Matrices**, Accuracy trends, and detailed classification reports (Precision/Recall).
+
+### 🔹 House Price Prediction (Linear Regression)
+* Developed a regression model to estimate **California housing prices** based on economic and demographic features (e.g., median income, room count).
+
+### 🔹 Smart Traffic Control System (Fuzzy Logic)
+* Implemented a **Fuzzy Logic** control system using `skfuzzy` to dynamically adjust traffic light "Green Time" based on real-time vehicle density.
+* Designed complex fuzzy rules and membership functions (**Triangular MF**) to model human-like reasoning for traffic flow optimization.
+* Developed a simulation environment that utilizes **Poisson distributions** to model stochastic vehicle arrivals and system response across multiple directions (N, S, E, W).
+
+### 🔹 Image Compression Analysis
+* Conducted an extensive image compression experiment using three state-of-the-art pre-trained models from the **CompressAI** library.
+* Evaluated model performance on the **Kodak dataset**, calculating key metrics including **bpp** (bit-per-pixel), **PSNR**, and **MS-SSIM**.
+* Measured and analyzed computational efficiency by tracking encoding/decoding times and real-time **GPU utilization**.
+* Automated the data collection process into CSV format and generated **Rate-Distortion (R-D) curves** to visualize the trade-off between compression rate and reconstructed image quality.
+
+---
+
+## 🛠️ Key Skills Demonstrated
+
+* Data preprocessing and feature engineering
+* Supervised & unsupervised machine learning
+* Deep learning with **CNNs** and **LSTMs**
+* Model evaluation and performance metrics
+* End-to-end ML pipeline development
+
+## 💻 Technologies Used
+
+* **Language:** Python
+* **Libraries:** Pandas, NumPy, Scikit-learn, XGBoost, PyTorch, TensorFlow, Matplotlib, CompressAI
+
+---
+
+## 🎯 Current Focus
+
+I am currently expanding my knowledge in:
+* **Natural Language Processing (NLP)**
+* **Large Language Models (LLMs)**
+* **Conversational AI systems**
+* **Big Data** (Spark, Docker, Kubernetes)
+
+---
+
+## ⚙️ Required Libraries & Dependencies
+
+To run the projects in this repository, you will need the following libraries. You can install them all at once using the command below:
+pip install numpy pandas matplotlib seaborn opencv-python scikit-learn tensorflow torch torchvision spacy scikit-fuzzy compressai 
+[!IMPORTANT]
+Note on Directories: You may need to change the paths in the code's directories for the datasets where necessary, as the training for most models was conducted on a local machine.
+
+
+-Contact
+Email: peri.oly123@gmail.com
+GitHub: https://github.com/PeriStr
