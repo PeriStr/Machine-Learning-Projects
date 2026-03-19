@@ -30,6 +30,7 @@ This repository contains a collection of **Machine Learning** and **Deep Learnin
 * Extracted **Color Histograms** (RGB/HSV) and **Edge Histograms** (Sobel Gradients) to represent visual information as feature vectors.
 * Implemented **ReLU** activation, **Dropout** for regularization, and **Early Stopping** to ensure efficient training and prevent overfitting.
 * Analyzed model performance using **Confusion Matrices**, Accuracy trends, and detailed classification reports (Precision/Recall).
+* ![image alt](https://github.com/PeriStr/Machine-Learning-Projects/blob/7534725aaaf2bc9dfd6debda08580c1ba24341a5/Figure_2.png)
 
 ### 🔹 House Price Prediction (Linear Regression)
 * Developed a regression model to estimate **California housing prices** based on economic and demographic features (e.g., median income, room count).
