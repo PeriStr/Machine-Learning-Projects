@@ -17,6 +17,7 @@ This repository contains a collection of **Machine Learning** and **Deep Learnin
 * Used pretrained **ResNet50** for image feature extraction.
 * Implemented **LSTM** for sequence generation.
 * Developed an end-to-end deep learning pipeline for image captioning.
+* ![image alt](https://github.com/PeriStr/Machine-Learning-Projects/blob/774d28b4d4587222d64619a7a3190a47822bb9d2/%CE%A3%CF%84%CE%B9%CE%B3%CE%BC%CE%B9%CF%8C%CF%84%CF%85%CF%80%CE%BF%20%CE%BF%CE%B8%CF%8C%CE%BD%CE%B7%CF%82%202026-03-19%20232005.png)
 
 ### 🔹 Car Recognition System (CNN)
 * Designed and trained a **Convolutional Neural Network (CNN)** optimized for vehicle recognition and multi-class classification.
