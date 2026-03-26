@@ -1,5 +1,5 @@
-LSTM Model Comparison for Time Series Prediction
-📌 Project Overview
+*LSTM Model Comparison for Time Series Prediction
+ Project Overview
 
 This project focuses on the implementation and comparison of multiple recurrent neural network architectures for time series forecasting. Specifically, different variants of Long Short-Term Memory (LSTM) networks are trained to predict air pollution levels (PM2.5).
 
@@ -47,13 +47,7 @@ The comparison results are printed in a table, and the best model is selected ba
 In this implementation, the GRU model achieved the best performance across most metrics.
 
 * EXAMPLE OF THE OUTPUT:
-* ============================================================
-        Model         RMSE          MAE      R2 Score
-         LSTM 2.656358e+02 1.916723e+02 -1.021758e+00
-       BiLSTM 1.017675e+03 1.000058e+03 -2.867385e+01
-          GRU 2.081095e+02 1.514951e+02 -2.409081e-01
-     ConvLSTM 6.850948e+07 2.200161e+07 -1.344798e+11
-AttentionLSTM 2.775906e+02 2.047802e+02 -1.207828e+00
+* ![image alt](https://github.com/PeriStr/Machine-Learning-Projects/blob/80d2cad3158a96d526a39499ce2074462eca7608/%CE%A3%CF%84%CE%B9%CE%B3%CE%BC%CE%B9%CF%8C%CF%84%CF%85%CF%80%CE%BF%20%CE%BF%CE%B8%CF%8C%CE%BD%CE%B7%CF%82%202026-03-26%20113849.png)
 
 ▶️ How to Run
 Download the dataset from Kaggle
