@@ -46,6 +46,15 @@ The comparison results are printed in a table, and the best model is selected ba
 
 In this implementation, the GRU model achieved the best performance across most metrics.
 
+* EXAMPLE OF THE OUTPUT:
+* ============================================================
+        Model         RMSE          MAE      R2 Score
+         LSTM 2.656358e+02 1.916723e+02 -1.021758e+00
+       BiLSTM 1.017675e+03 1.000058e+03 -2.867385e+01
+          GRU 2.081095e+02 1.514951e+02 -2.409081e-01
+     ConvLSTM 6.850948e+07 2.200161e+07 -1.344798e+11
+AttentionLSTM 2.775906e+02 2.047802e+02 -1.207828e+00
+
 ▶️ How to Run
 Download the dataset from Kaggle
 Update the dataset path in the code
