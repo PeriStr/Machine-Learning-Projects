@@ -50,7 +50,7 @@ This repository contains a collection of **Machine Learning** and **Deep Learnin
 * Real-World Beijing Dataset & Preprocessing: Leveraged the UCI Beijing PM2.5 dataset ($2010$-$2014$), performing feature engineering, one-hot encoding for wind direction, and a strict time-based $80/20$ train-test split.
 * Rigorous Performance Evaluation: Benchmarked all models using standard regression metrics (MAE, RMSE, and $R^2$ Score), identifying the GRU model as the most stable and efficient forecaster for this complex time-series data.
 * EXAMPLE OF THE OUTPUT:
-* ![image alt](<img width="823" height="474" alt="image" src="https://github.com/user-attachments/assets/7fb08ea1-8310-4c95-989e-035aa2dfb28c" />
+* ![image alt](
 )
 
 ---
