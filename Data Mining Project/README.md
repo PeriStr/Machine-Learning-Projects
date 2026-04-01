@@ -1,93 +1,74 @@
-🧠 Customer Segmentation & Behavioral Analysis with Machine Learning
-📌 Project Overview
+📊 Customer Segmentation & Machine Learning Project
+🔍 Project Overview
 
-This project implements a complete data science pipeline for customer behavior analysis in an e-commerce environment.
-It combines data preprocessing, unsupervised learning (clustering), supervised learning (classification), and association rule mining to extract meaningful insights from customer data.
+This project focuses on analyzing customer behavior in an e-commerce dataset using a complete data science pipeline.
 
-The main goal is to:
+The goal is to:
 
-Clean and prepare raw customer data
-Identify customer segments using clustering
-Predict customer segments using machine learning
-Discover hidden behavioral patterns using association rules
-📊 Dataset
-Source: Custom e-commerce dataset (ecommerecenice.csv)
-Description:
-The dataset contains customer behavioral data such as:
-Purchase frequency and monetary value
-Session activity (clicks, pages viewed, duration)
-Campaign response
-Wishlist interactions
-Returns and cart abandonment rates
-Customer segmentation labels
-⚙️ Project Pipeline
-🔹 1. Data Preprocessing
-
-The dataset undergoes extensive cleaning and transformation:
-
-Removal of missing critical values (Customer_ID)
-Imputation of missing numerical values using median
-Handling of invalid data (e.g., negative values, unrealistic session duration)
-Outlier treatment using IQR-based capping
-Standardization of categorical values
+Clean and preprocess raw data
+Identify customer groups (clustering)
+Predict these groups using machine learning
+Discover hidden patterns in customer behavior
+📂 Dataset
+File used: ecommerecenice.csv
+Contains:
+Customer activity (sessions, clicks, pages viewed)
+Purchase behavior (frequency, monetary value)
+Engagement (wishlist, campaigns)
+Returns & cart abandonment
+Segment labels
+⚙️ Workflow
+🔹 Data Preprocessing
+Removed missing values (especially Customer_ID)
+Filled numeric missing values using median
+Handled invalid values (negative numbers, unrealistic durations)
+Applied outlier capping (IQR)
+Cleaned categorical data (Segment labels)
 Encoding:
-Label Encoding for Customer IDs
-One-Hot Encoding for customer segments
-Duplicate removal
-Logical validation of inconsistent entries
+Label Encoding (Customer_ID)
+One-Hot Encoding (Segments)
+Removed duplicates
 
-👉 Output: Clean dataset saved as
+Final dataset saved as:
+
 clean_preprocessed_ecommerce.csv
-
-🔹 2. Customer Segmentation (K-Means Clustering)
-
-Customers are grouped into clusters based on behavioral features:
-
-Features used:
-Recency, Frequency, Monetary
-Session activity & engagement metrics
-Data scaling using StandardScaler
-Optimal number of clusters determined using:
+🔹 K-Means Clustering
+Used behavioral features (Recency, Frequency, Monetary, etc.)
+Applied StandardScaler
+Found optimal clusters using:
 Elbow Method
 Silhouette Score
-
-👉 Final model:
-
-K = 4 clusters
+Final choice: k = 4 clusters
 
 👉 Output:
 
-Cluster assignment for each customer
-Cluster profiles (mean behavior per cluster)
-🔹 3. Cluster Prediction (XGBoost Classifier)
-
-A supervised model is trained to predict customer clusters:
-
+Each customer assigned to a cluster
+Cluster profiles (average behavior)
+🔹 XGBoost Classification
+Goal: Predict customer cluster
 Model: XGBoost Classifier
-Key hyperparameters:
+
+Hyperparameters:
+
 n_estimators = 200
 max_depth = 4
 learning_rate = 0.1
-Train/Test split: 80% / 20%
 
-👉 Evaluation Metrics:
+👉 Evaluation:
 
 Accuracy
 Precision / Recall / F1-score
 
-👉 Additional Output:
+👉 Also includes:
 
-Feature Importance visualization
-🔹 4. Market Basket Analysis (Apriori Algorithm)
+Feature importance plot
+🔹 Apriori Algorithm (Association Rules)
+Converts features into binary (0/1)
+Finds relationships between:
+Segments
+Behavior (wishlist, returns, etc.)
 
-Association rules are extracted to identify hidden behavioral patterns:
-
-Binary transformation of features
-Use of:
-apriori for frequent itemsets
-association_rules for rule extraction
-
-👉 Key metrics:
+👉 Metrics used:
 
 Support
 Confidence
@@ -97,7 +78,6 @@ Lift
 
 Frequent itemsets
 Top association rules
-Strongest rules based on lift
 📈 Technologies Used
 Python
 Pandas / NumPy
@@ -105,25 +85,17 @@ Scikit-learn
 XGBoost
 MLxtend
 Matplotlib
-🧪 Key Insights
-K-Means clustering successfully identifies distinct customer behavior groups
-XGBoost can accurately predict customer segments
-Apriori reveals strong relationships between:
-Customer segments
-Campaign responses
-Behavioral patterns (wishlist, returns, cart abandonment)
 ▶️ How to Run
-Place the dataset in the correct path
-Update the file path inside the script
-Run the script:
-python script.py
+Put the dataset in the correct path
+Update the path in the code
+Run the script
 📌 Notes
-The project combines unsupervised + supervised + pattern mining, making it a complete data science workflow
-Suitable for:
-Customer segmentation
-Marketing strategy optimization
-Recommendation systems
-🚀 Future Improvements
-Use Deep Learning (Autoencoders) for anomaly detection
-Replace K-Means with DBSCAN or Hierarchical Clustering
-Deploy results in a dashboard (Power BI / Streamlit)
+Combines:
+Unsupervised Learning (K-Means)
+Supervised Learning (XGBoost)
+Pattern Mining (Apriori)
+This is a complete data analysis pipeline project
+🧠 Conclusion
+K-Means successfully groups customers into meaningful segments
+XGBoost predicts these segments effectively
+Apriori reveals useful hidden behavioral patterns
