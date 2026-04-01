@@ -52,7 +52,21 @@ This repository contains a collection of **Machine Learning** and **Deep Learnin
 * EXAMPLE OF THE OUTPUT:
 * ![image alt](https://github.com/PeriStr/Machine-Learning-Projects/blob/80d2cad3158a96d526a39499ce2074462eca7608/%CE%A3%CF%84%CE%B9%CE%B3%CE%BC%CE%B9%CF%8C%CF%84%CF%85%CF%80%CE%BF%20%CE%BF%CE%B8%CF%8C%CE%BD%CE%B7%CF%82%202026-03-26%20113849.png
 )
+### 🔹Semi-Supervised Anomaly Detection: The model is trained exclusively on normal transactions to learn the "essence" of legitimacy, allowing it to identify fraud as any data that fails to be accurately reconstructed (High Reconstruction Error).
 
+Optimized Hourglass Architecture: Using a symmetric 29-16-8-16-29 layer structure with Dropout and Early Stopping, the network forces a bottleneck compression that captures core features while preventing the model from simply "memorizing" the input.
+
+High-Performance Execution: Leveraged the RTX 5070 with a large batch size (2048) to achieve rapid training and stable convergence, resulting in a robust model that catches approximately 90% of fraudulent activities (Recall) at the 95th percentile threshold.
+Here follows an example of the output
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       1.00      0.95      0.97     56857
+           1       0.03      0.90      0.06       105
+
+    accuracy                           0.95     56962
+   macro avg       0.52      0.92      0.52     56962
+weighted avg       1.00      0.95      0.97     56962
 ---
 
 ## 🛠️ Key Skills Demonstrated
