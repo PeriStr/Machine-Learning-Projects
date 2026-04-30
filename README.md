@@ -140,6 +140,10 @@ Semi-supervised fraud detection system trained **exclusively on normal transacti
 - Rewritten from TF1 (session-based) to **TensorFlow 2.0** (Keras API)
 - GPU-aware batch sizing: 2048 (GPU) / 256 (CPU)
 
+## ⏳ Face Aging with Conditional GAN
+
+This project explores the fascinating idea of simulating the passage of time on human faces using a **Conditional Generative Adversarial Network (Conditional GAN)**. Trained on the **UTKFace dataset**, the model learns to associate facial features with different age groups and attempts to transform an input face into a selected target age category: `0-20`, `21-35`, `36-55`, `56-65`, or `65+`. At the core of the system, a **U-Net-based Generator** receives both the original face image and the desired age label, then tries to generate a new version of the same person while preserving identity-related details such as facial structure, pose, and general appearance. Opposing it, a **PatchGAN Discriminator** evaluates whether the generated image looks realistic and whether it matches the requested age category, creating the adversarial learning process that drives the model to improve. The project also includes an interactive **GUI** where users can upload their own images, preview the exact face crop passed into the model, choose a target age group, and generate either one transformed result or a full aging sequence across all five categories. Overall, this project demonstrates how GANs can be used for conditional image-to-image translation, offering a practical and visually engaging experiment in AI-based face aging.
+
 ---
 
 ## 🛠️ Technologies
